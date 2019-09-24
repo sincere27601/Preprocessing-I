@@ -128,47 +128,74 @@ table {
 }
 /* Set every element's box-sizing to border-box */
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 html,
 body {
   height: 100%;
 }
 
-.navigation-class {
-  font-size: 14px;
-  color: black;
-}
+@background-color: black;
+@color: tan;
 
-.body-class {
-  width: 60%;
-  height: 150px;
-  font-size: 10px;
+h1{
+  display: flex;
+  justify-content: center;
+  color: @color
+  
   
 }
-
-.body-class {
-  color: red;
-  font-size: 14px;
+footer{
+  .navigation-class();
+   margin: 1%;
+   background-color: white;
+}
+h1{
+  font-size: 300;
+  text-decoration: none;
 }
 
-.navigation-mixin {
-  text-align: center;
-  .body-class()
-}
-.font-class {
+
+.navigation-class{
+  display: flex;
+  justify-content: center;
   color: black;
-  font-size: 18px;
-  text-align: center;
+  width: 100%
 }
 
-.box-class {
-  width: 100px;
-  height: 100px;
-  background: gray;
+
+
+
+a {
+text-align: center;
+margin: 100px ;
+padding: 10px 0;
+
 }
 
-.example-mixin {
-  .font-class();
-  .box-class();
+@media(max-width 500px){
+  p{
+    display: flex;
+    font-size: 100px;
+    float: left;
+    box-sizing: border-box;
+    
+  }
+  
+  .navigation-class{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: grey;
+    font-size: 500px;
+    
+  }
 }
+
+
+
+
+
+
+
+
