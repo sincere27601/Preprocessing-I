@@ -134,3 +134,41 @@ html,
 body {
   height: 100%;
 }
+
+.navigation-class {
+  font-size: 14px;
+  color: black;
+}
+
+.body-class {
+  width: 60%;
+  height: 150px;
+  font-size: 10px;
+  
+}
+
+.body-class {
+  color: red;
+  font-size: 14px;
+}
+
+.navigation-mixin {
+  text-align: center;
+  .body-class()
+}
+.font-class {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+
+.box-class {
+  width: 100px;
+  height: 100px;
+  background: gray;
+}
+
+.example-mixin {
+  .font-class();
+  .box-class();
+}
