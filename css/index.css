@@ -134,6 +134,7 @@ html,
 body {
   height: 100%;
 }
+/*---Variables and other code work in code pen correctly.*/
 
 @background-color: black;
 @color: tan;
@@ -145,11 +146,14 @@ h1{
   
   
 }
+
+/*---Mixin 1*/
 footer{
   .navigation-class();
    margin: 1%;
    background-color: white;
 }
+
 h1{
   font-size: 300;
   text-decoration: none;
@@ -163,16 +167,13 @@ h1{
   width: 100%
 }
 
-
-
-
 a {
 text-align: center;
 margin: 100px ;
 padding: 10px 0;
 
 }
-
+/* Required Media Mobile At 500PX*/
 @media(max-width 500px){
   p{
     display: flex;
